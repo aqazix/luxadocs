@@ -15,18 +15,18 @@ exports.default = () => {
 const minifyHtml = () => {
     return gulp.src("./*.html")
         .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
-        .pipe(gulp.dest("./dist/"));
+        .pipe(gulp.dest("./docs/"));
 }
 
 const compileSass = () => {
     return gulp.src("./assets/sass/*.scss")
         .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-        .pipe(gulp.dest("./dist/"));
+        .pipe(gulp.dest("./docs/"));
 }
 
 const minifyJs = () => {
     return gulp.src("./assets/js/*.js")
         .pipe(babel({ presets: ["@babel/env"] }))
         .pipe(uglify())
-        .pipe(gulp.dest("./dist/"));
+        .pipe(gulp.dest("./docs/"));
 }
