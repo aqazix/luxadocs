@@ -1,0 +1,63 @@
+main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+
+    section {
+        width: 100%;
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .lx-row {
+            &:not(:first-child):not(:only-child) {
+                margin: 2rem 0 0 0;
+            }
+        }
+
+        hr {
+            width: 80%;
+            height: 0.0625rem;
+            border: none;
+            background-color: black;
+        }
+
+        &.hero {
+            h1,
+            h2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .git-link {
+                display: block;
+                border-radius: 0;
+                text-transform: none;
+                transition: 0.25s;
+
+                &:focus,
+                &:hover {
+                    text-decoration: none;
+                    background-color: lightgrey;
+                }
+            }
+        }
+
+        &.promo {
+            .lx-row {
+                &:nth-child(3) {
+                    align-items: stretch;
+                    gap: 2rem;
+                }
+            }
+
+            .code {
+                margin: 0 0.15rem;
+                background-color: lightgrey;
+            }
+        }
+    }
+}

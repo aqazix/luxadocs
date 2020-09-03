@@ -1,0 +1,78 @@
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 88%;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 0;
+
+    .brand {
+        width: fit-content;
+        user-select: none;
+    }
+
+    .links {
+        flex-basis: 0;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+
+        a {
+            &:focus,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 0;
+
+    .brand {
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+    }
+
+    .links,
+    .about-luxonauta {
+        height: 100%;
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        justify-content: center;
+
+        span,
+        a {
+            width: 100%;
+            text-align: left;
+        }
+
+        a {
+            &:focus,
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.lx-badge {
+    background-color: lightgrey;
+}
