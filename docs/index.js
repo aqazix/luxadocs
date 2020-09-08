@@ -1,1 +1,0 @@
-"use strict";document.addEventListener("DOMContentLoaded",(function(){new Zooming({customSize:"80%"}).listen(".img-zoomable")}));
