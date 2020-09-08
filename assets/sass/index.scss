@@ -59,5 +59,27 @@ main {
                 background-color: lightgrey;
             }
         }
+
+        &.showcase {
+            .image {
+                width: 100%;
+                height: auto;
+                cursor: zoom-in;
+                filter: grayscale(1);
+                transition: filter 0.4s ease-in-out;
+
+                img {
+                    width: auto;
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+
+                &:focus,
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+        }
     }
 }
