@@ -1,6 +1,12 @@
+$pc: #282a36;
+$sc: #44475a;
+$tc: #6272a4;
+$action: #ffb86c;
+
 html,
 body {
     font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 body {
@@ -12,6 +18,7 @@ body {
 header {
     width: 100%;
     padding: 1rem 0;
+    background-color: $pc;
 
     .brand {
         width: fit-content;
@@ -35,9 +42,14 @@ header {
     }
 }
 
+main {
+    background-color: $sc;
+}
+
 footer {
     width: 100%;
     padding: 2rem 0;
+    background-color: $pc;
 
     .brand {
         width: fit-content;
@@ -73,5 +85,5 @@ footer {
 }
 
 .lx-badge {
-    background-color: lightgrey;
+    background-color: $tc;
 }

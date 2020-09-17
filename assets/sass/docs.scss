@@ -1,3 +1,8 @@
+$pc: #282a36;
+$sc: #44475a;
+$tc: #6272a4;
+$action: #ffb86c;
+
 main {
     width: 100%;
     margin: 0 auto;
@@ -14,7 +19,7 @@ main {
             height: 0.0625rem;
             margin: 2rem auto;
             border: none;
-            background-color: black;
+            background-color: $pc;
         }
 
         nav {
@@ -43,7 +48,7 @@ main {
                 &.active,
                 &:focus,
                 &:hover {
-                    background-color: lightgrey;
+                    background-color: $pc;
                 }
             }
 
@@ -91,9 +96,17 @@ main {
                 text-decoration: underline;
             }
 
+            .code-box {
+                padding: 1rem 1rem 1rem 2rem;
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: $pc;
+                background-color: $tc;
+            }
+
             .code {
                 margin: 0 0.15rem;
-                background-color: lightgrey;
+                background-color: $pc;
             }
         }
     }

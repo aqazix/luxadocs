@@ -39,7 +39,6 @@
                             <a class="accordion">Overview</a>
                             <div class="panel">
                                 <a class="anchor" data-target="using-luxa">Getting Started</a>
-                                <a class="anchor" data-target="how-to-contribute">How to contribute</a>
                             </div>
                             <a class="accordion">Base</a>
                             <div class="panel">
@@ -92,14 +91,14 @@
                             <p>You can use <b>luxa</b> by CDN, provided by the <a href="https://www.jsdelivr.com/"
                                     target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> jsDeliver</a>
                                 service, below:</p>
-                            <br>
-                            <p>&#x3C;link rel=&#x22;stylesheet&#x22;
-                                href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/expanded/luxa.css&#x22;&#x3E;
-                            </p>
-                            <p>&#x3C;link rel=&#x22;stylesheet&#x22;
-                                href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/compressed/luxa.css&#x22;&#x3E;
-                            </p>
-                            <br>
+                            <div class="code-box">
+                                <p>&#x3C;link rel=&#x22;stylesheet&#x22;
+                                    href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/expanded/luxa.css&#x22;&#x3E;
+                                </p>
+                                <p>&#x3C;link rel=&#x22;stylesheet&#x22;
+                                    href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/compressed/luxa.css&#x22;&#x3E;
+                                </p>
+                            </div>
                             <h4>By Download</h4>
                             <p>You can also download the files from the <a
                                     href="https://github.com/luxonauta/luxa/tree/master/dist" target="_blank"
@@ -118,18 +117,18 @@
                             <h3>Rewrite and Change</h3>
                             <p>If you want to rewrite or change something, to better suit your needs.</p>
                             <p>You can start by cloning the repository:</p>
-                            <br>
-                            <p>git clone https://github.com/luxonauta/luxa.git</p>
-                            <br>
+                            <div class="code-box">
+                                <p>git clone https://github.com/luxonauta/luxa.git</p>
+                            </div>
                             <p>This project needs <a href="https://nodejs.org/en/" target="_blank"
                                     rel="noopener noreferrer">Node</a>, as we use <a href="https://gulpjs.com/"
                                     target="_blank" rel="noopener noreferrer">Gulp</a>.</p>
                             <p>Make sure you installed it with the following commands:</p>
-                            <br>
-                            <p>node --version</p>
-                            <p>npm --version</p>
-                            <p>npx --version</p>
-                            <br>
+                            <div class="code-box">
+                                <p>node --version</p>
+                                <p>npm --version</p>
+                                <p>npx --version</p>
+                            </div>
                             <p>If they are not installed, follow the <a href="https://nodejs.org/en/" target="_blank"
                                     rel="noopener noreferrer">instructions here</a>.</p>
                             <p>Install the Gulp command line utility</p>
@@ -137,169 +136,19 @@
                                     href="https://gulpjs.com/docs/en/getting-started/quick-start/" target="_blank"
                                     rel="noopener noreferrer"><i class="fas fa-link"></i> Gulp installation
                                     tutorial</a>, or you can simply run the command on your terminal:</p>
-                            <br>
-                            <p>npm install gulp gulp-cli node-sass gulp-sass --save-dev</p>
-                            <br>
+                            <div class="code-box">
+                                <p>npm install gulp gulp-cli node-sass gulp-sass --save-dev</p>
+                            </div>
                             <p><b>Verify your Gulp versions</b></p>
-                            <br>
-                            <p>gulp --version</p>
-                            <br>
+                            <div class="code-box">
+                                <p>gulp --version</p>
+                            </div>
                             <p><b>Test it</b></p>
                             <p>Now all you have to do is initialize it:</p>
-                            <br>
-                            <p>npm run gulp</p>
-                            <br>
+                            <div class="code-box">
+                                <p>npm run gulp</p>
+                            </div>
                             <p>And you're ready!</p>
-                            <hr>
-                            <h3 data-anchor="how-to-contribute">How to contribute</h3>
-                            <p>If you want to help, there are many ways to do it! You can send new features, fixes or
-                                updates.</p>
-                            <p>But before you start, review this contribution guide. This will make the process easier
-                                for everyone involved.</p>
-                            <h4>Open an issue</h4>
-                            <p><b>Start opening an issue.</b></p>
-                            <p>Always start this way, it will give me and other collaborators a chance to
-                                provide initial feedback, thoughts and possible historical context. It can also
-                                help you find other people who may want to help you or even solutions to common
-                                problems.</p>
-                            <p>When creating a issue, use the following labels:</p>
-                            <ul>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/labels/bug" target="_blank"
-                                            rel="noopener noreferrer">bug</a> – A bug in my code.</p>
-                                </li>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/labels/docs" target="_blank"
-                                            rel="noopener noreferrer">docs</a> – Issues with the documentation site.</p>
-                                </li>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/labels/enhancement" target="_blank"
-                                            rel="noopener noreferrer">enhancement</a> – Issues requesting a feature
-                                        modification or extension.</p>
-                                </li>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/labels/feature" target="_blank"
-                                            rel="noopener noreferrer">feature</a> – Issues requesting a new item.</p>
-                                </li>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/labels/help-wanted" target="_blank"
-                                            rel="noopener noreferrer">help-wanted</a> – A person would like help with an
-                                        issue.</p>
-                                </li>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/labels/meta" target="_blank"
-                                            rel="noopener noreferrer">meta</a> – Issues about Luxa or the GitHub
-                                        repository.</p>
-                                </li>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/labels/setup" target="_blank"
-                                            rel="noopener noreferrer">setup</a> – Issues related to Luxa setup and
-                                        compilation processes. These include items relating to Node, Sass, Gulp, or
-                                        other plugins.</p>
-                                </li>
-                            </ul>
-                            <h4>Reporting bugs</h4>
-                            <p>Reporting bugs is a great way to help!</p>
-                            <p>A bug is a reproducible problem with Luxa code or incorrect (or confusing) documentation.
-                                If you found a bug, report it using the following guidelines (adhering to these
-                                guidelines helps me to better understand the problem).</p>
-                            <ol>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/issues?utf8=%E2%9C%93&q="
-                                            target="_blank" rel="noopener noreferrer">Search previous issues</a> — Make
-                                        sure
-                                        this issue hasn't already been reported.</p>
-                                </li>
-                                <li>
-                                    <p><b>What’s the problem?</b> — If the issue hasn’t been reported, explain
-                                        what you are trying to do and what actually happened.</p>
-                                </li>
-                                <li>
-                                    <p><b>Provide an example</b> — A <a href="https://codepen.io/" target="_blank"
-                                            rel="noopener noreferrer">CodePen</a> that illustrates the
-                                        problem is perfect.</p>
-                                </li>
-                                <li>
-                                    <p><b>Describe what you’ve tried so far</b> — Understanding what you've
-                                        tried so far will help me respond more quickly. Include possible related
-                                        issues that you have read or explored as well.</p>
-                                </li>
-                                <li>
-                                    <p><b>Label your issue as a bug</b> - This has already been said, but it is
-                                        important to keep everything organized!</p>
-                                </li>
-                            </ol>
-                            <h4>Feature requests</h4>
-                            <p>Have an idea on how to improve Luxa? There are a few ways to submit your wild
-                                ideas!</p>
-                            <p>Open a issue first.</p>
-                            <p>When opening a issue, provide the following information:</p>
-                            <ol>
-                                <li>
-                                    <p>Proposed feature – What are you proposing?</p>
-                                </li>
-                                <li>
-                                    <p>Why do you need it? - Is this really necessary for the project? What is
-                                        your timeline? Have you tried using other elements and components first?
-                                        Why this needs to be standardized at Luxa (which aim to be a lightweight
-                                        solution).</p>
-                                </li>
-                                <li>
-                                    <p>Provide examples - If you have examples of how others have solved this
-                                        problem, please provide them so that I can better understand what you
-                                        are asking for.</p>
-                                </li>
-                                <li>
-                                    <p>Who do you want to create this? - Are you building this or do you want I
-                                        to build it?</p>
-                                </li>
-                                <li>
-                                    <p>Label your issue as a feature!</p>
-                                </li>
-                            </ol>
-                            <h4>Pull Requests</h4>
-                            <p>No Pull Request is too small or too early. I strive to provide early feedback in
-                                a timely manner.</p>
-                            <p>Adherence to the following process is the best way to include your contribution.
-                            </p>
-                            <ol>
-                                <li>
-                                    <p>Make sure you have the latest changes!</p>
-                                </li>
-                                <li>
-                                    <p>Checkout dev branch and create a new topic branch for your feature,
-                                        change, or fix.</p>
-                                </li>
-                                <li>
-                                    <p>Commit your changes in logical chunks.</p>
-                                </li>
-                                <li>
-                                    <p>Locally merge (or rebase) the upstream dev branch into your topic branch.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>Push your branch up to your fork.</p>
-                                </li>
-                                <li>
-                                    <p><a href="https://github.com/luxonauta/luxa/pulls" target="_blank"
-                                            rel="noopener noreferrer">Open a Pull
-                                            Request</a> with a clear title and description.</p>
-                                </li>
-                            </ol>
-                            <p>Please note that all Pull Requests should be merged into the dev branch. Any pull
-                                request for master will be rejected.</p>
-                            <h4>General preferences</h4>
-                            <p><b>Always use double quotes.</b></p>
-                            <p>Use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties"
-                                    target="_blank" rel="noopener noreferrer">Shorthand properties</a> in Sass(.scss)
-                                and use the modifier system of Luxa.</p>
-                            <h4>License</h4>
-                            <p>By contributing, you agree to license your work under <a
-                                    href="https://github.com/luxonauta/luxa/blob/master/LICENSE" target="_blank"
-                                    rel="noopener noreferrer">luxa’ MIT License</a>.</p>
-                            <h4>References</h4>
-                            <p>The following contribution guides were used as references when creating this one:
-                                Stacks, Bootstrap. TY!</p>
                             <hr>
                             <h3 data-anchor="luxa-reset">Reset</h3>
                             <p>luxa have a small file, which provides consistency between browsers in the
