@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.querySelector(".scroll-to-top").addEventListener("click", () => {
-        scrollIt(document.getElementsByTagName("main"));
+        scrollIt(document.querySelector("main"));
     });
 });
 
