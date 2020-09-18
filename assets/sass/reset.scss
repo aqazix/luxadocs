@@ -37,6 +37,7 @@ header {
             &:focus,
             &:hover {
                 text-decoration: underline;
+                text-decoration-color: $action;
             }
         }
     }

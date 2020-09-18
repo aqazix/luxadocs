@@ -3,6 +3,19 @@ $sc: #44475a;
 $tc: #6272a4;
 $action: #ffb86c;
 
+.scroll-to-top {
+    position: fixed;
+    top: 90%;
+    right: 5%;
+    line-height: 1;
+    font-size: 2rem;
+
+    &:focus,
+    &:hover {
+        color: $action;
+    }
+}
+
 main {
     width: 100%;
     margin: 0 auto;
@@ -30,11 +43,12 @@ main {
                 width: 100%;
                 padding: 0.25rem;
                 display: block;
+                user-select: none;
                 transition: 0.25s;
 
                 &:after {
                     content: "\002B";
-                    margin: 0 0 0 0.03125rem;
+                    margin: 0 0.25rem 0 0.03125rem;
                     font-weight: 600;
                     float: right;
                 }
@@ -68,6 +82,7 @@ main {
                     &:focus,
                     &:hover {
                         text-decoration: underline;
+                        text-decoration-color: $action;
                     }
                 }
             }
@@ -113,6 +128,10 @@ main {
 }
 
 @media screen and (max-width: 64rem) {
+    .scroll-to-top {
+        font-size: 1.5rem;
+    }
+
     main {
         section {
             nav {

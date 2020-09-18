@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
             scrollIt(target);
         });
     });
+
+    document.querySelector(".scroll-to-top").addEventListener("click", () => {
+        scrollIt(document.getElementsByTagName("main"));
+    });
 });
 
 const scrollIt = (element) => {
