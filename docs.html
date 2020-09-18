@@ -21,7 +21,7 @@
         <nav class="lx-container-70">
             <div class="lx-row">
                 <div class="brand">
-                    <a href="index.html"><span>luxa</span></a>
+                    <a href="index.html"><span><i class="fas fa-user-astronaut"></i>&nbsp;luxa</span></a>
                 </div>
                 <div class="links">
                     <a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a>
@@ -31,6 +31,7 @@
             </div>
         </nav>
     </header>
+    <a class="scroll-to-top" title="Back to Top"><i class="fas fa-chevron-circle-up"></i></a>
     <main>
         <section>
             <div class="lx-container-70">
@@ -52,6 +53,7 @@
                                 <a class="anchor" data-target="badges">Badge</a>
                                 <a class="anchor" data-target="breadcrumbs">Breadcrumb</a>
                                 <a class="anchor" data-target="card">Card</a>
+                                <a class="anchor" data-target="collection">Collections</a>
                                 <a class="anchor" data-target="pagination">Pagination</a>
                             </div>
                             <a class="accordion">Elements</a>
@@ -67,7 +69,10 @@
                                 <a class="anchor" data-target="box-shadow">Box shadow</a>
                                 <a class="anchor" data-target="flexbox">FlexBox</a>
                                 <a class="anchor" data-target="generic-classes">Generic classes</a>
+                                <a class="anchor" data-target="visibility">Visibility</a>
                                 <a class="anchor" data-target="positioning-classes">Positioning classes</a>
+                                <a class="anchor" data-target="transition">CSS Transitions</a>
+                                <a class="anchor" data-target="typography">Typography</a>
                             </div>
                             <a class="accordion">Layout</a>
                             <div class="panel">
@@ -221,6 +226,17 @@
                             <h4>Muted</h4>
                             <p>When a card is deactivated or considered complete, apply the mute modifier to
                                 visually darken the card.</p>
+                            <hr>
+                            <h3 data-anchor="collection">Collections</h3>
+                            <p>Collections allow you to group list objects together.</p>
+                            <p class="codepen" data-theme-id="dark" data-default-tab="result" data-user="luxonauta"
+                                data-slug-hash="JjXmjzB" data-preview="true"
+                                data-pen-title="luxa framework - Collections">
+                                <span>See the Pen <a href="https://codepen.io/luxonauta/pen/JjXmjzB">
+                                        luxa framework - Collections</a> by Lucas de França (<a
+                                        href="https://codepen.io/luxonauta">@luxonauta</a>)
+                                    on <a href="https://codepen.io">CodePen</a>.</span>
+                            </p>
                             <hr>
                             <h3 data-anchor="pagination">Pagination</h3>
                             <p>Pagination divides content into pages, Luxa is framework focused only on css, he
@@ -401,6 +417,45 @@
                                 </tbody>
                             </table>
                             <hr>
+                            <h3 data-anchor="visibility">Visibility</h3>
+                            <p>This visibility classes allow you to quickly change an element’s visibility.</p>
+                            <p>Below, the table shows the classes and what each of them does.</p>
+                            <table class="lx-table">
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>Output</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="code">.hide</span></td>
+                                        <td>
+                                            <p>display: none;</p>
+                                            <p>visibility: hidden;</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">.hide-on-desk</span></td>
+                                        <td>
+                                            <p><b>These properties will only be applied on large screens (Desktop)</b>
+                                            </p>
+                                            <p>display: none;</p>
+                                            <p>visibility: hidden;</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">.hide-on-mb</span></td>
+                                        <td>
+                                            <p><b>These properties will only be applied on small screens (Mobile)</b>
+                                            </p>
+                                            <p>display: none;</p>
+                                            <p>visibility: hidden;</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
                             <h3 data-anchor="positioning-classes">Positioning classes</h3>
                             <p>Some classes with types of placements.</p>
                             <p>Below, the table shows the classes and what each of them does.</p>
@@ -431,6 +486,75 @@
                                     <tr>
                                         <td><span class="code">.ps-sticky</span></td>
                                         <td>position: sticky;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <h3 data-anchor="transition">CSS Transitions</h3>
+                            <p>luxa has some atomic transition classes to allow you, to quickly apply transitions
+                                properties to an element.</p>
+                            <p>Below, the table shows the classes and what each of them does.</p>
+                            <table class="lx-table">
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>Output</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="code">.has-transition</span></td>
+                                        <td>
+                                            <p>transition-duration: 0.3s;</p>
+                                            <p>transition-property: all;</p>
+                                            <p>transition-delay: 0s;</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">.has-transition-slow</span></td>
+                                        <td>
+                                            <p>transition-duration: 1s;</p>
+                                            <p>transition-property: all;</p>
+                                            <p>transition-delay: 0s;</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">.has-transition-fast</span></td>
+                                        <td>
+                                            <p>transition-duration: 0.3s;</p>
+                                            <p>transition-property: all;</p>
+                                            <p>transition-delay: 0s;</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <h3 data-anchor="typography">Typography</h3>
+                            <p>Change typographic alignment with these atomic classes.</p>
+                            <p>Below, the table shows the classes and what each of them does.</p>
+                            <table class="lx-table">
+                                <thead>
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>Output</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="code">.is-text-left</span></td>
+                                        <td>text-align: left;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">.is-text-centered</span></td>
+                                        <td>text-align: center;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">.is-text-right</span></td>
+                                        <td>text-align: right;</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="code">.is-text-justified</span></td>
+                                        <td>text-align: justify;</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -479,6 +603,10 @@
                                 children to the center (vertically and horizontally).</p>
                             <p>If you want to change this you can use the following modifiers:</p>
                             <ul>
+                                <li>
+                                    <p><span class="code">.is-gapless</span> - To remove the gap of the child elements.
+                                    </p>
+                                </li>
                                 <li>
                                     <p><span class="code">.is-vstart</span> - To align items in start.</p>
                                 </li>
