@@ -1,0 +1,121 @@
+$btn: #f20732d1;
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+
+header {
+    width: 100%;
+    min-height: 3.75rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(white, 0.5);
+    backdrop-filter: blur(0.125rem);
+    z-index: 3;
+
+    nav {
+        .lx-row {
+            justify-content: space-between;
+
+            .brand {
+                height: 100%;
+                padding: 0.75rem;
+                border-radius: 0.125rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+
+                &:focus,
+                &:hover {
+                    background-color: rgba(black, 0.1);
+                }
+            }
+
+            .anchors {
+                height: 100%;
+
+                .anchor {
+                    height: 100%;
+                    padding: 0.5rem;
+                    border-radius: 0.125rem;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease-in-out;
+
+                    &:focus,
+                    &:hover {
+                        background-color: rgba(black, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    padding: 2rem 0;
+
+    section {
+        width: 100%;
+
+        &.hero {
+            min-height: 80vh;
+
+            .lx-row {
+                .lx-card {
+                    background-color: rgba(white, 0.5);
+                }
+
+                p {
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+
+                a {
+                    &.lx-btn {
+                        display: block;
+                        text-transform: none;
+                        color: white;
+                        background-color: $btn;
+                    }
+                }
+
+                &:first-child {
+                    flex-flow: wrap column;
+                }
+
+                &:not(:first-child):not(:only-child) {
+                    margin: 3rem 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 2rem 0;
+    background-color: rgba(white, 0.5);
+
+    .lx-column {
+        padding: 0 1rem;
+
+        p {
+            font-size: 0.85rem;
+        }
+
+        .links {
+            flex-flow: wrap column;
+
+            a {
+                &.link {
+                    width: 100%;
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+}
