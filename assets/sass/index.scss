@@ -30,21 +30,21 @@ main {
             background-color: $pc;
         }
 
+        .lx-btn {
+            display: block;
+            border-radius: 0;
+            text-transform: none;
+            font-weight: bolder;
+            color: $pc;
+            background-color: $action;
+            transition: 0.25s;
+        }
+
         &.hero {
             h1,
             h2 {
                 width: 100%;
                 text-align: center;
-            }
-
-            .git-link {
-                display: block;
-                border-radius: 0;
-                text-transform: none;
-                font-weight: bolder;
-                color: $pc;
-                background-color: $action;
-                transition: 0.25s;
             }
         }
 
@@ -80,6 +80,19 @@ main {
                 &:focus,
                 &:hover {
                     opacity: 1;
+                }
+            }
+        }
+
+        &.templates {
+            .lx-row {
+                flex-flow: wrap column;
+                align-items: flex-start;
+
+                &.btns-row {
+                    flex-flow: nowrap row;
+                    align-items: center;
+                    justify-content: space-evenly;
                 }
             }
         }
