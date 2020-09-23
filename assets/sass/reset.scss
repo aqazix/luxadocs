@@ -23,6 +23,11 @@ header {
     .brand {
         width: fit-content;
         user-select: none;
+
+        &:focus,
+        &:hover {
+            color: $action;
+        }
     }
 
     .links {
@@ -36,8 +41,7 @@ header {
         a {
             &:focus,
             &:hover {
-                text-decoration: underline;
-                text-decoration-color: $action;
+                color: $action;
             }
         }
     }
@@ -87,4 +91,18 @@ footer {
 
 .lx-badge {
     background-color: $tc;
+}
+
+@media screen and (max-width: 56.25rem) {
+    header {
+        .links {
+            a {
+                font-size: 0.9rem;
+            }
+
+            .lx-badge {
+                display: none;
+            }
+        }
+    }
 }
