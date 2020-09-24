@@ -32,12 +32,34 @@ main {
 
         .lx-btn {
             display: block;
-            border-radius: 0;
             text-transform: none;
             font-weight: bolder;
             color: $pc;
             background-color: $action;
             transition: 0.25s;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            display: flex;
+            border-radius: 0.262rem;
+            cursor: zoom-in;
+            opacity: 0.5;
+            transition: opacity 0.4s ease-in-out;
+
+            img {
+                width: auto;
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+            &:focus,
+            &:hover {
+                opacity: 1;
+            }
         }
 
         &.hero {
@@ -59,28 +81,6 @@ main {
             .code {
                 margin: 0 0.15rem;
                 background-color: $pc;
-            }
-        }
-
-        &.showcase {
-            .image {
-                width: 100%;
-                height: auto;
-                cursor: zoom-in;
-                opacity: 0.5;
-                transition: opacity 0.4s ease-in-out;
-
-                img {
-                    width: auto;
-                    max-width: 100%;
-                    height: auto;
-                    object-fit: contain;
-                }
-
-                &:focus,
-                &:hover {
-                    opacity: 1;
-                }
             }
         }
 

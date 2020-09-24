@@ -56,6 +56,10 @@ footer {
     padding: 2rem 0;
     background-color: $pc;
 
+    .lx-row {
+        gap: 2rem;
+    }
+
     .brand {
         width: fit-content;
         height: 100%;
@@ -103,6 +107,12 @@ footer {
             .lx-badge {
                 display: none;
             }
+        }
+    }
+
+    footer {
+        .lx-row {
+            gap: 1rem;
         }
     }
 }
