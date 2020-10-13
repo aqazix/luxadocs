@@ -1,10 +1,10 @@
 {
   "name": "luxadoc",
   "version": "1.0.0",
-  "description": "The luxa framework docs.",
+  "description": "The Luxa CSS framework docs.",
   "author": "Lucas de França",
   "license": "MIT",
-  "main": "~/dist/index.html",
+  "main": "~/docs/index.html",
   "scripts": {
     "gulp": "gulp"
   },
@@ -20,8 +20,7 @@
     "@babel/preset-env": "^7.11.5",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-cli": "^2.3.0",
-    "gulp-htmlmin": "^5.0.1",
+    "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
     "node-sass": "^4.14.1"
