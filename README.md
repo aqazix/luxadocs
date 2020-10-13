@@ -1,7 +1,7 @@
 # :coffee: luxadocs
-This repo is the site with the documentation for the CSS framework called [luxa](https://github.com/luxonauta/luxa).
+This repo is the site with the documentation for the CSS framework called [Luxa](https://github.com/luxonauta/luxa).
 
-## luxa
+## Luxa
 
 > luxa is a minimalist CSS framework.
 
