@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".accordion").forEach((acc) => {
+    document.querySelectorAll(".accordion").forEach(acc => {
         acc.addEventListener("click", () => {
-            acc.classList.toggle("active");
+            acc.classList.toggle("is-active");
             let panel = acc.nextElementSibling;
             panel.style.maxHeight
                 ? (panel.style.maxHeight = null)
@@ -9,10 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    document.querySelectorAll(".anchor").forEach((anchor) => {
+    document.querySelectorAll(".anchor").forEach(anchor => {
         anchor.addEventListener("click", () => {
-            let target = document.querySelector("[data-anchor='" + anchor.dataset.target + "']");
-            scrollIt(target);
+            scrollIt(document.querySelector("[data-anchor='" + anchor.dataset.target + "']"));
         });
     });
 
@@ -21,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const scrollIt = (element) => {
+function scrollIt(element) {
     window.scrollTo({
         "behavior": "smooth",
         "left": 0,
         "top": element.offsetTop
     });
-}
+};

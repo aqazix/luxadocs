@@ -1,0 +1,19 @@
+mixin item(path)
+    .lx-column
+        a.image(
+            href=path,
+            target="_blank",
+            rel="noopener noreferrer"
+        )
+            img(
+                src=path,
+                alt="Screen capture of a static web page.",
+                width="1920",
+                height="1080",
+                loading="lazy"
+            )
+
+.lx-container-70
+    .lx-row
+        each val in [1, 2, 3, 4]
+            +item("./assets/media/0"+val+".png")

@@ -1,0 +1,12 @@
+extends structure/_layout
+append head
+    link(rel="stylesheet" href="assets/styles/index.css")
+block content
+    section.hero
+        include includes/index/_hero
+    section.promo
+        include includes/index/_promo
+    section.showcase
+        include includes/index/_showcase
+    section.templates
+        include includes/index/_templates

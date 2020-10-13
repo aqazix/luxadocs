@@ -1,0 +1,39 @@
+extends structure/_layout
+append head
+    link(rel="stylesheet" href="assets/styles/docs.css")
+block content
+    a.scroll-to-top(title="Back to Top")
+        i.fas.fa-chevron-circle-up
+    section
+        .lx-container-70
+            .lx-row.align-start
+                include includes/docs/_sidenav
+                .lx-column
+                    include includes/docs/articles/_getting_started
+                    include includes/docs/articles/_luxa_reset
+                    include includes/docs/articles/_table
+                    include includes/docs/articles/_avatar
+                    include includes/docs/articles/_badge
+                    include includes/docs/articles/_breadcrumb
+                    include includes/docs/articles/_card
+                    include includes/docs/articles/_collection
+                    include includes/docs/articles/_pagination
+                    include includes/docs/articles/_button
+                    include includes/docs/articles/_small
+                    include includes/docs/articles/_box_shadow
+                    include includes/docs/articles/_flexbox
+                    include includes/docs/articles/_generic
+                    include includes/docs/articles/_visibility
+                    include includes/docs/articles/_transitions
+                    include includes/docs/articles/_typography
+                    include includes/docs/articles/_container
+                    include includes/docs/articles/_column
+                    include includes/docs/articles/_row
+                    include includes/docs/_giphy
+                include includes/docs/_shortcuts
+    block scripts
+        script(
+            src="https://static.codepen.io/assets/embed/ei.js",
+            async="true"
+        )
+        script(src="assets/scripts/main.js")

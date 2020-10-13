@@ -1,0 +1,93 @@
+article
+    h2(data-anchor="using-luxa") Getting Started
+    p This is my first time creating a framework, so I probably got some things wrong. Expect many changes and improvements for the next version!
+    p Luxa is simple and focused, its goal is to provide a lightweight solution that can be easily implemented in any development context.
+    p
+        | With simple class names like&nbsp;
+        span.code .lx-btn
+        | &nbsp;or&nbsp;
+        span.code .lx-row
+        | , and a simple modifier system, like&nbsp;
+        span.code .is-left
+        | , it is easy to learn and use.
+    h3 Quick Start
+    h4 By CDN
+    p
+        | You can use&nbsp;
+        b Luxa&nbsp;
+        | by CDN, provided by the jsDeliver service, below:
+    .code-box
+        p &#x3C;link rel=&#x22;stylesheet&#x22;href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/expanded/luxa.css&#x22;&#x3E;
+        p &#x3C;link rel=&#x22;stylesheet&#x22;href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/compressed/luxa.css&#x22;&#x3E;
+    h4 By Download
+    p
+        | You can also download the files from the&nbsp;
+        a(
+            href="https://github.com/luxonauta/luxa/tree/master/dist",
+            target="_blank",
+            rel="noopener noreferrer"
+        ) dist/&nbsp;
+        | folder and include them in your HTML with a link.
+    p There are two folders inside:
+    ol
+        li
+            p Compressed - A minified version.
+        li
+            p Expanded - A standard CSS file.
+    hr
+    h3 Rewrite and Change
+    p If you want to rewrite or change something, to better suit your needs.
+    p You can start by cloning the repository:
+    .code-box
+        p git clone https://github.com/luxonauta/luxa.git
+    p
+        | This project needs&nbsp;
+        a(
+            href="https://nodejs.org/en/",
+            target="_blank",
+            rel="noopener noreferrer"
+        ) Node
+        | , as the project use&nbsp;
+        a(
+            href="https://gulpjs.com/",
+            target="_blank",
+            rel="noopener noreferrer"
+        ) Gulp
+        | .
+    p Make sure you installed it with the following commands:
+    .code-box
+        p node --version
+        p npm --version
+        p npx --version
+    p
+        | If they are not installed, follow the&nbsp;
+        a(
+            href="https://nodejs.org/en/",
+            target="_blank",
+            rel="noopener noreferrer"
+        ) instructions here
+        | .
+    p After, install the Gulp command line utility;
+    p
+        | You can install it following the&nbsp;
+        a(
+            href="https://gulpjs.com/docs/en/getting-started/quick-start/",
+            target="_blank",
+            rel="noopener noreferrer"
+        )
+            i.fas.fa-link
+            | Gulp installation tutorial
+        | , or you can simply run the command on your terminal:
+    .code-box
+        p npm i --save-dev
+    p
+        b Verify your Gulp versions
+    .code-box
+        p gulp --version
+    p
+        b Test it
+    p Now all you have to do is initialize it:
+    .code-box
+        p npm run gulp
+    p And you're ready!
+    hr
