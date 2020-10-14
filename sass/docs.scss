@@ -36,50 +36,45 @@ main {
             position: sticky;
             top: 1rem;
 
-            .accordion {
+            details {
                 width: 100%;
-                padding: 0.25rem;
-                display: block;
+                display: flex;
+                flex-flow: wrap column;
+                border-radius: 0.328rem;
                 user-select: none;
-                transition: 0.25s;
 
-                &:after {
-                    content: "\002B";
-                    margin: 0 0.25rem 0 0.03125rem;
-                    font-weight: 600;
-                    float: right;
-                }
-
-                &.is-active {
-                    &:after {
-                        content: "\2212";
-                    }
-                }
-
-                &.is-active,
-                &:focus,
-                &:hover {
-                    background-color: $pc;
-                }
-            }
-
-            .panel {
-                width: 100%;
-                max-height: 0;
-                padding: 0 0 0 0.5rem;
-                display: grid;
-                grid-auto-flow: row;
-                overflow: hidden;
-                transition: max-height 0.25s ease-out;
-
-                a {
-                    width: 100%;
-                    display: block;
+                summary {
+                    padding: 0.7rem;
+                    outline: 0;
+                    cursor: pointer;
+                    font-weight: 500;
+                    transition: background-color 0.4s ease-in-out;
 
                     &:focus,
                     &:hover {
-                        text-decoration: underline;
-                        text-decoration-color: $action;
+                        background-color: rgba(black, 0.25);
+                    }
+                }
+
+                a {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0.5rem 1em;
+                    display: block;
+                    font-size: 0.875rem;
+
+                    &:focus,
+                    &:hover {
+                        color: $action;
+                    }
+                }
+
+                &[open] {
+                    background-color: rgba(black, 0.25);
+
+                    summary {
+                        color: $action;
+                        background-color: rgba(black, 0.25);
                     }
                 }
             }
@@ -112,8 +107,7 @@ main {
                 padding: 1rem 1rem 1rem 2rem;
                 border-radius: 0.328rem;
                 font-size: 0.875rem;
-                font-weight: 600;
-                color: $pc;
+                color: white;
                 background-color: $tc;
             }
 
