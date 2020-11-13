@@ -7,13 +7,13 @@ mixin item(path)
         )
             img(
                 src=path,
-                alt="Screen capture of a static web page.",
-                width="1920",
-                height="1080",
+                alt="Screen capture of a static web page built with Luxa.",
+                width="325",
+                height="190",
                 loading="lazy"
             )
 
 .lx-container-70
     .lx-row
         each val in [1, 2, 3, 4]
-            +item("./assets/media/0"+val+".png")
+            +item("./assets/media/0"+val+".webp")
