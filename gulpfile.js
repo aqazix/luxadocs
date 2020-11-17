@@ -8,7 +8,7 @@ sass.compiler = require("node-sass");
 
 exports.default = () => {
     gulp.watch("./**/*.pug", compilePug);
-    gulp.watch("./sass/*.scss", compileSass);
+    gulp.watch("./sass/*.sass", compileSass);
     gulp.watch("./js/*.js", compileJs);
 }
 
@@ -19,7 +19,7 @@ const compilePug = () => {
 }
 
 const compileSass = () => {
-    return gulp.src(["./sass/index.scss", "./sass/docs.scss"])
+    return gulp.src(["./sass/index.sass", "./sass/docs.sass"])
         .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
         .pipe(gulp.dest("./docs/assets/styles/"));
 }
