@@ -2,6 +2,11 @@ $pc: #22212c
 $sc: #2a2c37
 $tc: #44475a
 $action: #9580ff
+$action2: #50fa7b
+
+\:root
+    --nav-bg: #22212c
+    --nav-color: #fff
 
 html,
 body
@@ -12,74 +17,43 @@ body
     min-height: 100vh
     display: grid
     grid-template-rows: auto 1fr auto
+    background-color: $sc
 
 header
     width: 100%
-    padding: 1rem 0
-    background-color: $pc
+    top: 0
+    z-index: 3
 
-    .brand
-        width: fit-content
-        user-select: none
-
+    .lx-nav-item
         &:focus,
         &:hover
             color: $action
 
-    .links
-        flex-basis: 0
-        flex-grow: 1
-        display: flex
-        align-items: center
-        justify-content: flex-end
-        gap: 1rem
-
-        a
-            &.bmc
-                width: 10rem
-                padding: .5rem
-                border-radius: 0.262rem
-                background-color: $sc
-                transition: background-color .4s ease-in-out
-
-                img
-                    object-fit: contain
-
-                &:focus,
-                &:hover
-                    background-color: $action
-
-            &:focus,
-            &:hover
-                color: $action
-
-main
-    background-color: $sc
-
 footer
     width: 100%
-    padding: 2rem 0
+    padding: 3rem 0
     background-color: $pc
 
     .lx-row
         gap: 2rem
 
     .brand
-        width: fit-content
-        height: 100%
         display: flex
         flex-flow: wrap column
-        align-items: center
-        justify-content: center
+        align-items: flex-start
+        gap: .25rem
         user-select: none
+
+        .lx-badge
+            margin: 0
 
     .links,
     .about-me
-        height: 100%
         display: flex
         flex-flow: wrap column
         align-items: center
-        justify-content: center
+        justify-content: flex-start
+        gap: .35rem
 
         span,
         a
@@ -87,21 +61,33 @@ footer
             text-align: left
 
         a
+            text-decoration-thickness: 1rem
+
             &:focus,
             &:hover
+                color: $action
                 text-decoration: underline
+                text-decoration-color: $action2
+
+    .bmc
+        padding: .5rem .75rem
+        border-radius: .25rem
+
+        &:focus,
+        &:hover
+            background-color: rgba(0,0,0,0.4)
 
 .lx-badge
+    cursor: help
     background-color: $tc
+    transition: color background-color .3s ease-in-out
+
+    &:focus,
+    &:hover
+        color: black
+        background-color: $action2
 
 @media screen and (max-width: 56.25rem)
-    header
-        .links
-            flex-flow: wrap column
-
-            .lx-badge
-                display: none
-
     footer
         .lx-row
             gap: 1rem

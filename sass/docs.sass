@@ -30,8 +30,7 @@ main
             background-color: $pc
 
         nav
-            position: sticky
-            top: 1rem
+            top: 6rem
 
             details
                 width: 100%
@@ -50,6 +49,7 @@ main
 
                     &:focus,
                     &:hover
+                        color: $action2
                         background-color: rgba(black, 0.25)
 
                 a
@@ -61,7 +61,7 @@ main
 
                     &:focus,
                     &:hover
-                        color: $action
+                        color: $action2
 
                 &[open]
                     background-color: rgba(black, 0.25)
@@ -75,9 +75,13 @@ main
                 flex-flow: wrap column
 
                 a
+                    text-decoration-thickness: 1rem
+
                     &:focus,
                     &:hover
+                        color: $action
                         text-decoration: underline
+                        text-decoration-color: $action2
 
         article
             padding: 0 2rem
@@ -99,7 +103,7 @@ main
                 margin: 0 0.15rem
                 background-color: $pc
 
-@media screen and (max-width: 64rem)
+@media screen and (max-width: 70rem)
     .scroll-to-top
         font-size: 1.5rem
 
