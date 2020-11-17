@@ -1,19 +1,19 @@
 footer
     nav.lx-container-70
         .lx-row.align-stretch
-            .brand
+            .lx-column.brand
                 span
                     i.fas.fa-user-astronaut
-                    | &nbsp;Luxa
-                span.lx-badge v1.01
-            .links
+                    | &nbsp;Luxa CSS
+                span.lx-badge v1.1
+            .lx-column.links
                 span
                     i.fas.fa-map-signs
                     | &nbsp;
                     b Map
                 a(href="./index.html") Home
                 a(href="./docs.html") Docs
-            .about-me
+            .lx-column.about-me
                 span
                     i.fas.fa-comment
                     | &nbsp;
@@ -38,3 +38,11 @@ footer
                     target="_blank",
                     rel="noopener noreferrer"
                     ) Twitter
+            .lx-column
+                a(
+                    href="https://www.buymeacoffee.com/luxonauta",
+                    target="_blank",
+                    rel="noopener noreferrer",
+                    aria-label="Buy me a coffee"
+                ).has-dflex-center.bmc
+                    img(src="assets/media/bmc.svg" alt="Buy me a coffee logo" width="160" height="32" loading="lazy")
