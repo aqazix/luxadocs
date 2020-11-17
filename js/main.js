@@ -1,19 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".anchor").forEach(anchor => {
-        anchor.addEventListener("click", () => {
-            scrollIt(document.querySelector("[data-anchor='" + anchor.dataset.target + "']"));
-        });
-    });
+    const navbarBurger = document.querySelector(".lx-nav-burger");
+    const navbarMenu = document.querySelector(".lx-nav-menu");
 
-    document.querySelector(".scroll-to-top").addEventListener("click", () => {
-        scrollIt(document.querySelector("main"));
+    navbarBurger.addEventListener("click", () => {
+        navbarBurger.classList.toggle("is-active");
+        navbarMenu.classList.toggle("is-active");
     });
 });
-
-function scrollIt(element) {
-    window.scrollTo({
-        "behavior": "smooth",
-        "left": 0,
-        "top": element.offsetTop
-    });
-};

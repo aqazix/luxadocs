@@ -1,18 +1,26 @@
-header
-    nav.lx-container-70
-        .lx-row
-            .brand
-                a(href="./index.html")
-                    span
-                        i.fas.fa-user-astronaut
-                        | &nbsp;Luxa CSS
-            .links
-                a(href="docs.html")
-                    i.fas.fa-book
-                    | &nbsp;Docs
-                a(href="https://github.com/luxonauta/luxa" target="_blank" rel="noopener noreferrer")
-                    i.fab.fa-github-alt
-                    | &nbsp;GitHub
+header.ps-sticky.bs-md
+    nav.lx-nav
+        .lx-nav-brand
+            a(href="./index.html").lx-nav-item
+                span
+                    i.fas.fa-user-astronaut
+                    | &nbsp;Luxa CSS
+            button.lx-nav-burger
+                span
+                span
+                span
+        .lx-nav-menu
+            a(href="docs.html").lx-nav-item
+                i.fas.fa-book
+                | &nbsp;Docs
+            a(
+                href="https://github.com/luxonauta/luxa",
+                target="_blank",
+                rel="noopener noreferrer"
+            ).lx-nav-item
+                i.fab.fa-github-alt
+                | &nbsp;GitHub
+            .lx-nav-item
                 a(
                     href="https://www.buymeacoffee.com/luxonauta",
                     target="_blank",
@@ -20,4 +28,4 @@ header
                     aria-label="Buy me a coffee"
                 ).has-dflex-center.bmc
                     img(src="assets/media/bmc.svg" alt="Buy me a coffee logo" width="160" height="32" loading="lazy")
-                span.lx-badge v1.1
+            span.lx-badge v1.1
