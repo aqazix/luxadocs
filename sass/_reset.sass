@@ -53,7 +53,7 @@ footer
         flex-flow: wrap column
         align-items: center
         justify-content: flex-start
-        gap: .35rem
+        gap: .75rem
 
         span,
         a
@@ -70,7 +70,7 @@ footer
                 text-decoration-color: $action2
 
     .bmc
-        padding: .5rem .75rem
+        padding: 1rem .75rem
         border-radius: .25rem
 
         &:focus,
@@ -78,9 +78,10 @@ footer
             background-color: rgba(0,0,0,0.4)
 
 .lx-badge
-    cursor: help
+    margin: 0 auto 0 0
     background-color: $tc
-    transition: color background-color .3s ease-in-out
+    transition-property: color, background-color
+    transition: .3s ease-in-out
 
     &:focus,
     &:hover

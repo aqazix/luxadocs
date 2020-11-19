@@ -1,32 +1,28 @@
 const gulp = require("gulp");
+const coffee = require("gulp-coffee")
 const pug = require("gulp-pug");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify-es").default;
-const babel = require("gulp-babel");
 
 sass.compiler = require("node-sass");
 
 exports.default = () => {
-    gulp.watch("./**/*.pug", compilePug);
-    gulp.watch("./sass/*.sass", compileSass);
-    gulp.watch("./js/*.js", compileJs);
-}
+    gulp.watch("./coffee/*.coffee", () => {
+        return gulp.src("./coffee/*.coffee")
+            .pipe(coffee({ bare: true }))
+            .pipe(uglify())
+            .pipe(gulp.dest("./docs/assets/scripts/"));
+    });
 
-const compilePug = () => {
-    return gulp.src("./*.pug")
-        .pipe(pug())
-        .pipe(gulp.dest("./docs/"));
-}
+    gulp.watch("./sass/*.sass", () => {
+        return gulp.src(["./sass/index.sass", "./sass/docs.sass"])
+            .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+            .pipe(gulp.dest("./docs/assets/styles/"));
+    });
 
-const compileSass = () => {
-    return gulp.src(["./sass/index.sass", "./sass/docs.sass"])
-        .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-        .pipe(gulp.dest("./docs/assets/styles/"));
-}
-
-const compileJs = () => {
-    return gulp.src("./js/*.js")
-        .pipe(babel({ presets: ["@babel/env"] }))
-        .pipe(uglify())
-        .pipe(gulp.dest("./docs/assets/scripts/"));
-}
+    gulp.watch("./**/*.pug", () => {
+        return gulp.src("./*.pug")
+            .pipe(pug())
+            .pipe(gulp.dest("./docs/"));
+    });
+};

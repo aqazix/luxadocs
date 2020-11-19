@@ -1,0 +1,1 @@
+var animation;animation=bodymovin.loadAnimation({container:document.querySelector("#astronaut"),renderer:"svg",loop:!0,autoplay:!0,path:"assets/media/astronaut.json"});

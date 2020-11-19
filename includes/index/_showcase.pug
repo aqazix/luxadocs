@@ -13,7 +13,8 @@ mixin item(path)
                 loading="lazy"
             )
 
-.lx-container-70
-    .lx-row
-        each val in [1, 2, 3, 4]
-            +item("./assets/media/0"+val+".webp")
+section.showcase
+    .lx-container-70
+        .lx-row
+            each val in [1, 2, 3, 4]
+                +item("./assets/media/0"+val+".webp")

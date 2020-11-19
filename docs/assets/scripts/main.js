@@ -1,1 +1,1 @@
-"use strict";document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelector(".lx-nav-burger"),t=document.querySelector(".lx-nav-menu");e.addEventListener("click",(function(){e.classList.toggle("is-active"),t.classList.toggle("is-active")}))}));
+var navbarBurger,navbarMenu,toggleActive;toggleActive=function(){return navbarBurger.classList.toggle("is-active"),navbarMenu.classList.toggle("is-active")},navbarBurger=document.querySelector(".lx-nav-burger"),navbarMenu=document.querySelector(".lx-nav-menu"),navbarBurger.addEventListener("click",toggleActive);

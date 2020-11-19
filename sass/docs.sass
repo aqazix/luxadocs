@@ -1,15 +1,30 @@
 @import _reset
 
-.scroll-to-top
+#scroll-to-top
+    width: 3rem
+    height: 3rem
+    padding: 0
     position: fixed
     top: 90%
     right: 5%
-    line-height: 1
+    border: none
     font-size: 2rem
+    background-color: $pc
+    transition-property: color, background-color
+    transition: .3s ease-in-out
+    z-index: 3
+
+    img,
+    svg
+        object-fit: contain
 
     &:focus,
     &:hover
-        color: $action
+        color: $pc
+        background-color: $action
+
+.cp_embed_iframe
+    min-height: 25rem
 
 main
     width: 100%
@@ -34,6 +49,7 @@ main
 
             details
                 width: 100%
+                overflow-x: hidden
                 display: flex
                 flex-flow: wrap column
                 border-radius: 0.328rem
@@ -102,6 +118,10 @@ main
             .code
                 margin: 0 0.15rem
                 background-color: $pc
+
+            #lochness
+                width: 100%
+                position: relative
 
 @media screen and (max-width: 70rem)
     .scroll-to-top
