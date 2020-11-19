@@ -1,9 +1,14 @@
 extends structure/_layout
 append head
+    title Luxa CSS - Docs
     link(rel="stylesheet" href="assets/styles/docs.css")
 block content
-    a.scroll-to-top(title="Back to Top")
-        i.fas.fa-chevron-circle-up
+    button(
+        id="scroll-to-top",
+        class="has-dflex-center",
+        title="Scroll back to top",
+    )
+        i.fas.fa-hand-point-up
     section
         .lx-container-70
             .lx-row.align-start
@@ -30,11 +35,12 @@ block content
                     include includes/docs/articles/_container
                     include includes/docs/articles/_column
                     include includes/docs/articles/_row
+                    #lochness
                 include includes/docs/_shortcuts
     block scripts
         script(
             src="https://static.codepen.io/assets/embed/ei.js",
-            async="true"
+            crossorigin="anonymous",
+            defer="true"
         )
-        script(src="assets/scripts/main.js")
-        script(src="assets/scripts/docs.js")
+        script(src="assets/scripts/docs.js", defer="true")
