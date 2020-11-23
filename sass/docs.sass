@@ -108,6 +108,24 @@ main
             a
                 text-decoration: underline
 
+            blockquote
+                display: block
+                margin: 0
+                padding: 1rem 1.5rem
+                position: relative
+                font-style: italic
+                color: $action2
+
+                &:before
+                    content: "\201C"
+                    font-size: 2rem
+                    position: absolute
+                    top: 1rem
+                    left: 0
+                    line-height: 1
+                    font-weight: 600
+                    color: $action
+
             .code-box
                 padding: 1rem 1rem 1rem 2rem
                 border-radius: 0.328rem
@@ -118,10 +136,6 @@ main
             .code
                 margin: 0 0.15rem
                 background-color: $pc
-
-            #lochness
-                width: 100%
-                position: relative
 
 @media screen and (max-width: 70rem)
     .scroll-to-top
