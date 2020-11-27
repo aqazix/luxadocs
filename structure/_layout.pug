@@ -10,6 +10,7 @@ html(lang="en")
         link(rel="shortcut icon" href="assets/brand/favicon.svg" type="image/svg+xml")
         link(rel="preconnect" href="https://fonts.gstatic.com")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css")
         link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/compressed/luxa.css")
         block head
         script(src="https://www.googletagmanager.com/gtag/js?id=G-MNRQY9EF0R", async)
@@ -25,6 +26,11 @@ html(lang="en")
         include _footer
         script(
             src="https://use.fontawesome.com/releases/v5.15.1/js/all.js",
+            crossorigin="anonymous",
+            defer="true"
+        )
+        script(
+            src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js",
             crossorigin="anonymous",
             defer="true"
         )

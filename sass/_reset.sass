@@ -4,10 +4,6 @@ $tc: #44475a
 $action: #9580ff
 $action2: #50fa7b
 
-\:root
-    --nav-bg: #22212c
-    --nav-color: #fff
-
 html,
 body
     font-family: "Roboto", sans-serif
@@ -24,10 +20,51 @@ header
     top: 0
     z-index: 3
 
+    .lx-nav,
+    .lx-nav-menu.is-active
+        background-color: $pc
+
     .lx-nav-item
         &:focus,
         &:hover
             color: $action
+
+    #search-wrapper
+        height: 2.5rem
+
+        svg
+            min-width: 2rem
+            height: 100%
+            padding: .5rem
+            font-size: 1rem
+            color: $action
+            border-top-left-radius: .25rem
+            border-bottom-left-radius: .25rem
+            background-color: $tc
+            transition: color .3s ease-in-out
+
+        #search
+            height: 100%
+            padding: .5rem 1rem .5rem .25rem
+            border-top-left-radius: 0
+            border-bottom-left-radius: 0
+            border-top-right-radius: .25rem
+            border-bottom-right-radius: .25rem
+            border: none
+            color: white
+            background-color: $tc
+
+            &::placeholder
+                color: white
+
+        .algolia-autocomplete
+            height: 100%
+
+        &:focus,
+        &:focus-within,
+        &:hover
+            svg
+                color: $action2
 
 footer
     width: 100%
@@ -87,6 +124,13 @@ footer
     &:hover
         color: black
         background-color: $action2
+
+@media screen and (max-width: 70rem)
+    #search-wrapper
+        width: 100%
+
+        .algolia-autocomplete
+            width: 100%
 
 @media screen and (max-width: 56.25rem)
     footer
