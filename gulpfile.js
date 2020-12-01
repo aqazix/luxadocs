@@ -15,7 +15,7 @@ exports.default = () => {
     });
 
     gulp.watch("./sass/*.sass", () => {
-        return gulp.src(["./sass/index.sass", "./sass/docs.sass"])
+        return gulp.src(["./sass/blog.sass", "./sass/docs.sass", "./sass/index.sass"])
             .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
             .pipe(gulp.dest("./docs/assets/styles/"));
     });
