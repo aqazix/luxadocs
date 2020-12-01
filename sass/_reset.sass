@@ -1,8 +1,9 @@
 $pc: #22212c
 $sc: #2a2c37
 $tc: #44475a
-$action: #9580ff
-$action2: #50fa7b
+$ac: #9580ff
+$ac2: #50fa7b
+$ac3: #ffb86c
 
 html,
 body
@@ -27,7 +28,7 @@ header
     .lx-nav-item
         &:focus,
         &:hover
-            color: $action
+            color: $ac
 
     #search-wrapper
         height: 2.5rem
@@ -37,7 +38,7 @@ header
             height: 100%
             padding: .5rem
             font-size: 1rem
-            color: $action
+            color: $ac
             border-top-left-radius: .25rem
             border-bottom-left-radius: .25rem
             background-color: $tc
@@ -64,7 +65,7 @@ header
         &:focus-within,
         &:hover
             svg
-                color: $action2
+                color: $ac2
 
 footer
     width: 100%
@@ -102,9 +103,9 @@ footer
 
             &:focus,
             &:hover
-                color: $action
+                color: $ac
                 text-decoration: underline
-                text-decoration-color: $action2
+                text-decoration-color: $ac2
 
     .bmc
         padding: 1rem .75rem
@@ -115,7 +116,7 @@ footer
             background-color: rgba(0,0,0,0.4)
 
 .lx-badge
-    margin: 0 auto 0 0
+    user-select: none
     background-color: $tc
     transition-property: color, background-color
     transition: .3s ease-in-out
@@ -123,7 +124,23 @@ footer
     &:focus,
     &:hover
         color: black
-        background-color: $action2
+        background-color: $ac2
+
+blockquote
+    display: block
+    margin: 0
+    padding: 1rem 1.5rem
+    position: relative
+    font-style: italic
+
+    &:before
+        content: "\201C"
+        font-size: 2rem
+        position: absolute
+        top: 1rem
+        left: 0
+        line-height: 1
+        font-weight: 600
 
 @media screen and (max-width: 70rem)
     #search-wrapper
