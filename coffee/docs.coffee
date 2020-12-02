@@ -1,6 +1,6 @@
 document.querySelectorAll(".anchor").forEach((anchor)->
     anchor.addEventListener("click", ()->
-        scrollIt(document.querySelector("[data-anchor='" + anchor.dataset.target + "']"))
+        scrollIt(document.querySelector("#" + anchor.dataset.target))
     )
 )
 
@@ -12,5 +12,5 @@ scrollIt = (element)->
     window.scrollTo({
         "behavior": "smooth",
         "left": 0,
-        "top": element.offsetTop
+        "top": element.offsetTop - 80
     })
