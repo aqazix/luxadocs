@@ -8,3 +8,24 @@ nav.lx-column.is-2.ps-sticky
             target="_blank",
             rel="noopener noreferrer"
         ) Codepen Collection
+        #newsletter
+            form(
+                action="https://www.getrevue.co/profile/luxonauta/add_subscriber",
+                method="post",
+                accept-charset="UTF-8",
+                target="_blank"
+            )
+                label(for="member_email") Subscribe for updates
+                small 
+                    | By subscribing, you agree with Revue’s 
+                    a(
+                        href="https://www.getrevue.co/terms",
+                        target="_blank"
+                    ) Terms 
+                    | and 
+                    a(
+                        href="https://www.getrevue.co/privacy",
+                        target="_blank"
+                    ) Privacy Policy
+                input(type="email" id="member_email" placeholder="Your email address")
+                input(type="submit" id="member_submit" name="member[subscribe]" value="Subscribe")
