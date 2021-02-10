@@ -39,7 +39,6 @@ $radius: .328rem
 
 main
     width: 100%
-    margin: 0 auto
 
     section
         width: 100%
@@ -56,6 +55,7 @@ main
             background-color: $pc
 
         nav
+            position: sticky
             top: 6rem
 
             details
@@ -113,6 +113,7 @@ main
         article
             width: 100%
             padding: 0 2rem
+            display: block
 
             h2
                 margin-top: 0
@@ -127,8 +128,8 @@ main
             .code-box
                 width: 100%
                 height: auto
-                margin: 1rem 0
-                padding: 0
+                margin: 0
+                padding: .15rem
                 position: relative
                 overflow: auto hidden
                 display: block
@@ -141,9 +142,7 @@ main
                     min-width: max-content
                     margin: 0
                     padding: 2rem
-                    display: grid
-                    grid-auto-flow: row
-                    gap: $line-gap
+                    display: table
                     border-radius: $radius
                     font-family: inherit
 
@@ -187,6 +186,9 @@ main
 
     main
         section
+            .lx-container-70
+                width: 80%
+
             nav
                 position: relative
                 top: unset
