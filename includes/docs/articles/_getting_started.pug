@@ -12,9 +12,24 @@ article#using-luxa
     h3 Quick Start
     h4 By CDN
     p To quickly add Luxa CSS, use the jsDelivr CDN, a free and open-source CDN.
-    .lx-card.code-box
-        p &#x3C;link rel=&#x22;stylesheet&#x22;href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/expanded/luxa.css&#x22;&#x3E;
-        p &#x3C;link rel=&#x22;stylesheet&#x22;href=&#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/compressed/luxa.css&#x22;&#x3E;
+    .code-box
+        .code
+            span.line
+                | &#x3C;
+                span.c2 link 
+                span.c3 rel=
+                span.c4 &#x22;stylesheet&#x22; 
+                span.c3 href=
+                span.c4 &#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/expanded/luxa.css&#x22;
+                | &#x3E;
+            span.line
+                | &#x3C;
+                span.c2 link 
+                span.c3 rel=
+                span.c4 &#x22;stylesheet&#x22; 
+                span.c3 href=
+                span.c4 &#x22;https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/compressed/luxa.css&#x22;
+                | &#x3E;
     h4 By Download
     p
         | Download the files the files from the&nbsp;
@@ -34,8 +49,9 @@ article#using-luxa
     h3 Customize, Rewrite or Change
     p Want to customize, rewrite or change something, to suit your needs better?
     p Start by cloning the repository:
-    .lx-card.code-box
-        p git clone https://github.com/luxonauta/luxa.git
+    .code-box
+        .code
+            span.line git clone https://github.com/luxonauta/luxa.git
     p
         | This project needs&nbsp;
         a(
@@ -51,10 +67,11 @@ article#using-luxa
         ) Gulp
         | .
     p Make sure it is installed, with the following commands:
-    .lx-card.code-box
-        p node --version
-        p npm --version
-        p npx --version
+    .code-box
+        .code
+            span.line node --version
+            span.line npm --version
+            span.line npx --version
     p
         | If not, follow the&nbsp;
         a(
@@ -74,16 +91,19 @@ article#using-luxa
             i.fas.fa-link
             | Gulp installation tutorial
         | , or run the command on the terminal:
-    .lx-card.code-box
-        p npm i
+    .code-box
+        .code
+            span.line npm i
     p
         b Verify your Gulp versions
-    .lx-card.code-box
-        p gulp --version
+    .code-box
+        .code
+            span.line gulp --version
     p
         b Then test it!
     p Now all you have to do is initialize it:
-    .lx-card.code-box
-        p npm run gulp
+    .code-box
+        .code
+            span.line npm run gulp
     p And you're ready!
     hr

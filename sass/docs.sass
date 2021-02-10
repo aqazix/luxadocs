@@ -1,5 +1,16 @@
 @import _reset
 
+$pre-bg: #22212c
+$c1: #ffffff
+$c2: #ff79c6
+$c3: #50fa7b
+$c4: #f1fa8c
+$c5: #ffb86c
+$c6: #bd93f9
+$c7: #8be9fd
+$line-gap: .5rem
+$radius: .328rem
+
 #scroll-to-top
     width: 3rem
     height: 3rem
@@ -100,6 +111,7 @@ main
                         text-decoration-color: $ac2
 
         article
+            width: 100%
             padding: 0 2rem
 
             h2
@@ -108,16 +120,66 @@ main
             a
                 text-decoration: underline
 
-            .code-box
-                padding: 1rem 1rem 1rem 2rem
-                border-radius: 0.328rem
-                font-size: 0.875rem
-                color: white
-                background-color: $tc
-
             .code
                 margin: 0 0.15rem
                 background-color: $pc
+
+            .code-box
+                width: 100%
+                height: auto
+                margin: 1rem 0
+                padding: 0
+                position: relative
+                overflow: auto hidden
+                display: block
+                border-radius: .328rem
+                font-family: "Fira Code", monospace
+                background-color: $pre-bg
+
+                .code
+                    width: 100%
+                    min-width: max-content
+                    margin: 0
+                    padding: 2rem
+                    display: grid
+                    grid-auto-flow: row
+                    gap: $line-gap
+                    border-radius: $radius
+                    font-family: inherit
+
+                    span
+                        color: $c1
+                        transition-property: color, background-color
+                        transition-duration: .3s
+                        transition-timing-function: ease-in-out
+
+                        &.line
+                            min-height: .5rem
+                            position: relative
+                            line-height: 1
+                            font-size: .9rem
+
+                            @for $i from 1 through 10
+                                &[data-indent="#{$i}"]
+                                    padding: 0 1rem 0 #{1 * $i}rem
+
+                        &.c2
+                            color: $c2
+
+                        &.c3
+                            color: $c3
+
+                        &.c4
+                            color: $c4
+
+                        &.c5
+                            color: $c6
+
+                        &.c6
+                            color: $c7
+
+                        &.c7
+                            color: $c5
 
 @media screen and (max-width: 70rem)
     .scroll-to-top
@@ -128,10 +190,6 @@ main
             nav
                 position: relative
                 top: unset
-
-                &.lx-column
-                    &.is-2
-                        width: 100%
 
             article
                 padding: 0
