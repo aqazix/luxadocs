@@ -81,11 +81,8 @@ footer
         display: flex
         flex-flow: wrap column
         align-items: flex-start
-        gap: .25rem
+        gap: .5rem
         user-select: none
-
-        .lx-badge
-            margin: 0
 
     .links,
     .about-me
@@ -100,22 +97,23 @@ footer
             width: 100%
             text-align: left
 
-        a
-            text-decoration-thickness: 1rem
-
-            &:focus,
-            &:hover
-                color: $ac
-                text-decoration: underline
-                text-decoration-color: $ac2
-
-    .bmc
-        padding: 1rem .75rem
-        border-radius: .25rem
+    a
+        text-decoration-thickness: 1rem
 
         &:focus,
         &:hover
-            background-color: rgba(0,0,0,0.4)
+            color: $ac
+            text-decoration: underline
+            text-decoration-color: $ac2
+
+    .brands
+        img,
+        svg
+            width: 100%
+            max-width: 7.8125rem
+            height: 100%
+            object-fit: contain
+            object-position: center
 
 .lx-badge
     user-select: none

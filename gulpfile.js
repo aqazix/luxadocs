@@ -1,10 +1,8 @@
 const gulp = require("gulp");
 const coffee = require("gulp-coffee")
 const pug = require("gulp-pug");
-const sass = require("gulp-sass");
+const sass = require("gulp-sass")(require("sass"));
 const uglify = require("gulp-uglify-es").default;
-
-sass.compiler = require("node-sass");
 
 exports.default = () => {
     gulp.watch("./coffee/*.coffee", () => {
