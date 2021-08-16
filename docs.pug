@@ -36,12 +36,14 @@ block content
                     include includes/docs/articles/_container
                     include includes/docs/articles/_column
                     include includes/docs/articles/_row
-                    #lochness
                 include includes/docs/_shortcuts
     block scripts
         script(
+            defer,
             src="https://static.codepen.io/assets/embed/ei.js",
             crossorigin="anonymous",
-            defer="true"
         )
-        script(src="assets/scripts/docs.js", defer="true")
+        script(
+            defer,
+            src="assets/scripts/docs.js"
+        )
