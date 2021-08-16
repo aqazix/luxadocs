@@ -25,23 +25,24 @@ html(lang="en")
             block content
         include _footer
 
-        minymon-body(
-            enableFeed="true",
-            enableTalk="true",
-            idsString="NjM4ZTA0YTAtZTFlNy00MjgyLTgyNDgtNTc2ZDNmNzg3ZDE0LjRLbXlaOTV1d00walhNZ3RmcHN2bg==",
-            infoTitle="Hi there!",
-            theme="green"
-        )
-            minymon-feedback(
-                description="Your message will be sent to Luxa.",
-                mid="638e04a0-e1e7-4282-8248-576d3f787d14",
-                theme="green",
-                uid="4KmyZ95uwM0jXMgtfpsvn"
-            )
-            minymon-music(
-                src="null",
+        .minymon
+            minymon-body.minymon-body(
+                enableFeed="true",
+                enableTalk="true",
+                idsString="NjM4ZTA0YTAtZTFlNy00MjgyLTgyNDgtNTc2ZDNmNzg3ZDE0LjRLbXlaOTV1d00walhNZ3RmcHN2bg==",
+                infoTitle="Hi there!",
                 theme="green"
             )
+                minymon-feedback(
+                    description="Your message will be sent to Luxa.",
+                    mid="638e04a0-e1e7-4282-8248-576d3f787d14",
+                    theme="green",
+                    uid="4KmyZ95uwM0jXMgtfpsvn"
+                )
+                minymon-music(
+                    src="null",
+                    theme="green"
+                )
         
         script(
             src="https://use.fontawesome.com/releases/v5.15.1/js/all.js",
