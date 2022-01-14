@@ -34,43 +34,6 @@ header
         &:hover
             color: $ac
 
-    #search-wrapper
-        height: 2.5rem
-
-        svg
-            min-width: 2rem
-            height: 100%
-            padding: .5rem
-            font-size: 1rem
-            color: $ac
-            border-top-left-radius: .25rem
-            border-bottom-left-radius: .25rem
-            background-color: $tc
-            transition: color .3s ease-in-out
-
-        #search
-            height: 100%
-            padding: .5rem 1rem .5rem .25rem
-            border-top-left-radius: 0
-            border-bottom-left-radius: 0
-            border-top-right-radius: .25rem
-            border-bottom-right-radius: .25rem
-            border: none
-            color: white
-            background-color: $tc
-
-            &::placeholder
-                color: white
-
-        .algolia-autocomplete
-            height: 100%
-
-        &:focus,
-        &:focus-within,
-        &:hover
-            svg
-                color: $ac2
-
 footer
     width: 100%
     padding: 3rem 0
@@ -191,9 +154,6 @@ blockquote
 @media screen and (max-width: 70rem)
     #search-wrapper
         width: 100%
-
-        .algolia-autocomplete
-            width: 100%
 
 @media screen and (max-width: 57rem)
     #carbonads
