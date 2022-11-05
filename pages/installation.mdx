@@ -1,0 +1,52 @@
+# Installation
+
+How to install and set up Luxa CSS in your project.
+
+## Using with HTML
+
+You can use Luxa CSS with plain HTML by importing the CSS file:
+
+```html
+<!-- Expanded - A standard CSS file. -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@1.1/dist/expanded/luxa.css"
+/>
+
+<!-- Compressed - A minified version. -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@1.1/dist/compressed/luxa.css"
+/>
+```
+
+## Using with Next.js
+
+<CH.Section>
+
+You will need to [import the CSS file](focus://7:10) into your custom document.
+
+If you don't already have one, you can create the `pages/_document.js` file as shown below:
+
+```jsx
+import { Head, Html, Main, NextScript } from "next/document";
+
+export default function Document() {
+  return (
+    <Html>
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/luxonauta/luxa@latest/dist/compressed/luxa.css"
+        />
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
+}
+```
+
+</CH.Section>

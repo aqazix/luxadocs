@@ -1,0 +1,42 @@
+:root {
+  --code-color: hsl(41, 53%, 67%);
+  --code-background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.ch-codeblock,
+.ch-codegroup {
+  position: relative;
+  border-radius: 0.5rem !important;
+  box-shadow: none !important;
+
+  .ch-code {
+    background-color: var(--lx-secondary-background-color) !important;
+  }
+}
+
+.ch-codeblock *,
+.ch-codegroup *,
+code {
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 0.75rem;
+}
+
+.ch-section-link,
+code {
+  padding: 0.125rem;
+  border-radius: 0.25rem;
+  color: var(--code-color);
+}
+
+code {
+  background-color: var(--code-background-color);
+}
+
+.ch-section-link {
+  cursor: pointer !important;
+
+  &[data-active="true"] {
+    text-decoration-thickness: 1px !important;
+    background-color: var(--code-background-color) !important;
+  }
+}

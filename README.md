@@ -1,15 +1,10 @@
-# Luxa CSS Docs
+## Luxa CSS - 📃 Docs
 
-This repo is the docs site for the CSS framework called [Luxa CSS](https://github.com/luxonauta/luxa).
+This is the documentation repository for the minimalistic CSS framework called [Luxa CSS](https://dub.sh/luxacss).
 
-## Luxa CSS
+- 📖 You can read more about him [here](https://dub.sh/luxacss).
+- 🙈 And you can see his repository [here](https://dub.sh/gitluxacss).
 
-> Luxa CSS is a minimalist CSS framework.
+If you're interested in the project, you can follow up on [my personal Twitter](https://dub.sh/luxonautatt) or [join our community on Discord](https://dub.sh/joindiscord).
 
-Simple and focused, its goal is to provide a lightweight solution that can be easily implemented in any development context.
-
-With simple class names like `.lx-btn` or `.lx-row`, and a simple modifier system, like `.is-left`.
-
-See examples and projects in Codepen made using it, in [my profile](https://codepen.io/luxonauta).
-
-I never did anything like that and English is not my native language, if there are any mistakes, please feel free to correct me, I will be very grateful!
+✅ English is not my native language, so if you notice any errors, please report them to me; I'll be happy to correct them!
