@@ -1,0 +1,105 @@
+# Container
+
+Base for most pages, containers define the content's bounds.
+
+## How to use
+
+To define a container, you must only attribute the class `lx-container-$`, where `$` is the percentage of the page's width that you wish it to span, as in the example below:
+
+```html
+<div class="lx-container-80">
+  <div>
+    Your content here
+  </div>
+</div>
+```
+
+<div className="lx-container-80" style={{
+  marginBottom: "1em",
+  padding: "1em 1em .1em 1em",
+  backgroundColor: "rgb(31,31,31)"
+}}>
+  <div>
+    Your content here
+  </div>
+</div>
+
+The lower limit for a container is 50% of its parent's width.
+
+```html Lower-limit
+<div class="lx-container-50">
+  <div>
+    Your content here
+  </div>
+</div>
+```
+
+<div className="lx-container-50" style={{
+  marginBottom: "1em",
+  padding: "1em 1em .1em 1em",
+  backgroundColor: "rgb(31,31,31)"
+}}>
+  <div>
+    Your content here
+  </div>
+</div>
+
+From this point upward, you can define containers with width percentages in increments of 5.
+
+```html Increments-of-5
+<div class="lx-container-55">
+  <div>
+    Your content here
+  </div>
+</div>
+```
+
+<div className="lx-container-55" style={{
+  marginBottom: "1em",
+  padding: "1em 1em .1em 1em",
+  backgroundColor: "rgb(31,31,31)"
+}}>
+  <div>
+    Your content here
+  </div>
+</div>
+
+Other percentages are considered invalid.
+
+```html Invalid-percentage
+<div class="lx-container-66">
+  <div>
+    Your content here
+  </div>
+</div>
+```
+
+<div className="lx-container-66" style={{
+  marginBottom: "1em",
+  padding: "1em 1em .1em 1em",
+  backgroundColor: "rgb(31,31,31)"
+}}>
+  <div>
+    Your content here
+  </div>
+</div>
+
+The upper limit is 100% of its parent's width.
+
+```html Upper-limit
+<div class="lx-container-100">
+  <div>
+    Your content here
+  </div>
+</div>
+```
+
+<div className="lx-container-100" style={{
+  marginBottom: "1em",
+  padding: "1em 1em .1em 1em",
+  backgroundColor: "rgb(31,31,31)"
+}}>
+  <div>
+    Your content here
+  </div>
+</div>

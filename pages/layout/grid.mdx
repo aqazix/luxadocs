@@ -1,0 +1,75 @@
+# Grid
+
+The grid component has the same role as `lx-row` in creating a wrapper, only that it organizes its contents in a grid pattern.
+
+```html
+<div class="lx-container-100">
+  <div class="lx-grid">
+    <div class="lx-col"></div>
+    <div class="lx-col"></div>
+    <div class="lx-col"></div>
+    <div class="lx-col"></div>
+  </div>
+</div>
+```
+
+<div className="lx-container-100">
+  <div className="lx-grid" style={{ marginBottom: "1em" }}>
+    <div className="lx-col" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+    <div className="lx-col" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+    <div className="lx-col" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+    <div className="lx-col" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+  </div>
+</div>
+
+You can use the wrapper class `lx-grid-wrap` to add a padding around your grid.
+
+```html
+<div class="lx-container-100">
+  <div class="lx-grid-wrap">
+    <div class="lx-grid">
+      <div class="lx-col"></div>
+      <div class="lx-col"></div>
+      <div class="lx-col"></div>
+      <div class="lx-col"></div>
+    </div>
+  </div>
+</div>
+```
+
+<div className="lx-container-100">
+  <div className="lx-grid-wrap" style={{
+    backgroundColor: "rgb(45,45,45)"
+  }}>
+    <div className="lx-grid">
+      <div className="lx-col" style={{
+        padding: "1em",
+        backgroundColor: "rgb(31,31,31)"
+      }}></div>
+      <div className="lx-col" style={{
+        padding: "1em",
+        backgroundColor: "rgb(31,31,31)"
+      }}></div>
+      <div className="lx-col" style={{
+        padding: "1em",
+        backgroundColor: "rgb(31,31,31)"
+      }}></div>
+      <div className="lx-col" style={{
+        padding: "1em",
+        backgroundColor: "rgb(31,31,31)"
+      }}></div>
+    </div>
+  </div>
+</div>

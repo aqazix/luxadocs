@@ -1,0 +1,111 @@
+# Row and Column
+
+Rows defines a group of columns, divisions in content that spans a certain width of the container.
+
+## Rows
+
+The use of a row is pretty simple. When you declare it, it will span the available width in the container. Two rows can't be side by side in the same container. The contents will be centered in the row.
+
+```html
+<div class="lx-container-100">
+  <div class="lx-row">
+    <div>
+      Your content here
+    </div>
+  </div>
+</div>
+```
+
+Rows are flex components, so they are already mobile friendly. In desktop, the row will assume `flex-flow: wrap row` behavior. In other words, it will organize its contents in a horizontal manner. In mobile, however, it will assume the `flex-flow: wrap column` behavior, organizing its contents in the vertical.
+
+## Columns
+
+As previously stated, columns are divisions of content in a row. Even though it isn't mandatory to use them outside rows, it is highly indicated, as without a proper flex wrapper their organization and responsiveness tends to don't assume the desired result.
+
+Just as containers, you can define its relative width. Just like major CSS frameworks, columns in `Luxa CSS` can range from 1 to 12 through the use of its auxiliary class `is-$`, where `$` is the size of the column you want. If the `is-$` class is not declared, it assumes a flex size, adjusting its width to the remaining width in relation to other elements.
+
+### One column
+
+In this case, there's only one column that spans the whole row
+
+```html One-column
+<!--  -->
+<div class="lx-container-100">
+  <div class="lx-row">
+    <div class="lx-col is-12"></div>
+  </div>
+</div>
+```
+
+<div className="lx-container-100">
+  <div className="lx-row">
+    <div className="lx-col is-12" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+  </div>
+</div>
+
+### Multiple columns
+
+In this case, the columns divide the available space through their explicit sizes
+
+```html Multiple-columns
+<div class="lx-container-100">
+  <div class="lx-row">
+    <div class="lx-col is-4"></div>
+    <div class="lx-col is-4"></div>
+    <div class="lx-col is-4"></div>
+  </div>
+</div>
+```
+
+<div className="lx-container-100">
+  <div className="lx-row">
+    <div className="lx-col is-4" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+    <div className="lx-col is-4" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+    <div className="lx-col is-4" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+  </div>
+</div>
+
+### Multiple flex columns
+
+In this case, one of the columns will occupy implicitly 50% percent of the available space, since the other two columns occupy explicitly 25% each
+
+```html Multiple-flex-columns
+<div class="lx-container-100">
+  <div class="lx-row">
+    <div class="lx-col is-3"></div>
+    <div class="lx-col"></div>
+    <div class="lx-col is-3"></div>
+  </div>
+</div>
+```
+
+<div className="lx-container-100">
+  <div className="lx-row">
+    <div className="lx-col is-3" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+    <div className="lx-col" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+    <div className="lx-col is-3" style={{
+      padding: "1em",
+      backgroundColor: "rgb(31,31,31)"
+    }}></div>
+  </div>
+</div>
+
+In mobile screens, all columns spans the whole row.
